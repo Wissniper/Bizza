@@ -1,12 +1,35 @@
 import React from "react";
-import SpeakerProfile from "./SpeakerProfile";
+import SearchSpeaker from "./SearchSpeaker";
 
-function App() {
-  const speakerName = "John Wilson";
+//child component
+function SpeakerProfile(props) {
   return (
-    <div style={{ backgroundColor: "gray", margin: 20, color: "white" }}>
-      <SpeakerProfile />
-    </div>
+    <>
+      <h3>{props.name}</h3>
+      <p>Position: {props.jobTitle}</p>
+      <p>Company: {props.company}</p>
+    </>
+  );
+}
+
+//Parent component
+function App() {
+  return (
+    <>
+      <h1>Speaker Profile</h1>
+      //Child component with attributes name, jobTitle and company inside parent
+      component
+      <SpeakerProfile
+        name="Juliet Runolf"
+        jobTitle="Director, Marketing"
+        company="Abernathy Group"
+      />
+      <div style={{ backgroundColor: "white", margin: 20, color: "blue" }}>
+        <h1>...</h1>
+        ... . .
+        <SearchSpeaker />
+      </div>
+    </>
   );
 }
 

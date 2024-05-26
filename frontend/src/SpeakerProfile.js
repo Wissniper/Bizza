@@ -1,5 +1,5 @@
 import React from "react";
-const SpeakerProfile = () => {
+const SpeakerProfile = (props) => {
   return <h1>This is a function component equivalent to a class component!</h1>;
 };
 
