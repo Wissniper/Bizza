@@ -1,5 +1,6 @@
 import React from "react";
 import SearchSpeaker from "./SearchSpeaker";
+import { BasicHook } from "./Hooks";
 
 //child component
 function SpeakerProfile(props) {
@@ -28,6 +29,9 @@ function App() {
         <h1>...</h1>
         ... . .
         <SearchSpeaker />
+      </div>
+      <div style={{ color: "green" }}>
+        <BasicHook />
       </div>
     </>
   );
